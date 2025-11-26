@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* ini adalah internal css */
+
+      header {
+        background-color: #046eaf;
+        text-align: center;
+        padding: 15px 0;
+        color: rgba(255, 255, 255, 0.905);
+      }
+
+      nav {
+        background-color: #0783ef;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: whitesmoke;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+        color: orange;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 50px 0;
+        height: 400px;
+        color: rgb(231, 217, 217);
+        text-shadow: 2px 2px 4px #000000;
+        /* background-color: grey; */
+        background: url(images\ \(1\).jpeg);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 30px;
+      }
+
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding: 20px 0;
+        /* background-color: red; */
+      }
+
+      .services {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .service {
+        flex: 1;
+        min-width: 250px;
+        background: #617edd;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .service h3 {
+        color: #040505;
+      }
+
+      form {
+        background: #3268a9;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      input,
+      textarea {
+        width: 99%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #151414;
+        border-radius: 5px;
+      }
+
+      button {
+        background: #0490e7;
+        color: rgb(48, 61, 74);
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #036ca9;
+      }
+
+      footer {
+        text-align: center;
+        background: #2654aa;
+        color: rgb(10, 11, 11);
+        padding: 10px 0;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1> konter kuota Anjeli </h1>
+    </header>
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <section class="hero" id="beranda">
+      <h1>Selamat datang konter Anjeli </h1>
+    </section>
+
+    <section class="container" id="layanan">
+      <h2 style="text-align: center">Layanan Kami</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Sedia berbagai kuota</h3>
+          <p>Tri,XL,Telkomsel,Axis, Dll</p>
+          <img src="download - Copy.png"style="width:100%; border-radius:10px;">
+        </div>
+        <div class="service">
+          <h3>Topup</h3>
+          <p>Dana,shopee pay,OVO,Dll</p>
+          <img src="download (1) - Copy.png"style="width:100%; border-radius:10px;">
+        </div>
+        <div class="service">
+          <h3>berbagai casing</h3>
+          <p>OPPO,VIVO,INFINIX,Dll</p>
+          <img src="images - Copy.jpeg"style="width:100%; border-radius:10px;">
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="tentang">
+      <h2 style="text-align: center">Tentang Kami</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Visi</h3>
+          <p>menjadi konter pilihan utama masyarakat untuk semua kebutuhan telekomunikasi,digital,dan aksesoris dengan pelayanan terbaik</p>
+        </div>
+        <div class="service">
+          <h3>Misi</h3>
+          <p>memberikan pelayanan yang ramah, profesional, dan cepat kepda semua pelanggan</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="kontak">
+      <h2 style="text-align: center">Hubungi kami</h2>
+      <form action="">
+        <label>Nama</label>
+        <input type="text" placeholder="Masukkan nama Anda" />
+        <label>Email</label>
+        <input type="email" placeholder="Masukkan email Anda" />
+        <label>Pesan</label>
+        <textarea rows="5" placeholder="Masukkan pesan Anda"></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>Konter Kuota Anjeli</p>
+    </footer>
+  </body>
+</html>
